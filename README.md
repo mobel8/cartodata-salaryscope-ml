@@ -1,6 +1,6 @@
 # SalaryScope IDF — estimation salariale, explicabilité & matching (Module 03)
 
-> **Module Data Science / ML de la plateforme [CartoData IDF](../README.md).** « Avant même de postuler chez vous, j'ai modélisé le salaire de marché de VOTRE propre poste sur ~1 800 offres concurrentes Data/IA d'Île-de-France : tapez un intitulé, le modèle sort le salaire attendu, son **intervalle**, son **percentile marché** et les **3 facteurs SHAP** qui le tirent. »
+> **Module Data Science / ML de la plateforme CartoData IDF.** « Avant même de postuler chez vous, j'ai modélisé le salaire de marché de VOTRE propre poste sur ~1 800 offres concurrentes Data/IA d'Île-de-France : tapez un intitulé, le modèle sort le salaire attendu, son **intervalle**, son **percentile marché** et les **3 facteurs SHAP** qui le tirent. »
 
 Ce module **consomme le dataset GOLD produit par le module 01** (`01-data-engineering`) — salaires déjà annualisés, dédupliqués, géo-résolus — et en fait un **produit data scientist de bout en bout** : régression + explicabilité + classification NLP + matching, servis en API et en démo interactive. Une donnée maîtrisée, amortie sur une famille de postes de plus.
 
@@ -73,3 +73,15 @@ Biais de sélection (les offres qui **affichent** un salaire ne sont pas représ
 
 ---
 *Données = offres d'emploi publiques. Aucune information personnelle. Dépôt public-safe.*
+
+---
+
+## 🛰️ Plateforme CartoData IDF
+
+Projet portfolio data/IA construit sur **un seul dataset** (le marché de l'emploi Data/IA d'Île-de-France que j'ai scrapé) — **un projet par famille de métier** :
+
+- 🔧 [Data Engineering — Lakehouse ELT](https://github.com/mobel8/cartodata-data-engineering)
+- 📊 [BI — Observatoire « Where do I fit? »](https://github.com/mobel8/cartodata-observatoire-bi)
+- 🤖 **Data Science / ML — SalaryScope — vous êtes ici**
+- 🛡️ [Data Product / Gouvernance — DataTrust](https://github.com/mobel8/cartodata-datatrust-gouvernance)
+- 💬 [IA générative / NLP — CartoIA](https://github.com/mobel8/cartodata-cartoia-genai)

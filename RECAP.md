@@ -60,4 +60,4 @@ Biais de sélection assumé · couverture salaire 24 % · labels 81 % Indeed (m�
 Dépôt **public-safe** : aucune information personnelle. Le coût de la vie est traité **au département** (pas de ville de domicile). Données = offres publiques.
 
 ## 13. Place dans la plateforme
-Module **#03** du monorepo **[CartoData IDF](../README.md)** : consomme le GOLD du **#01 (Data Eng)**, complète le **#02 (BI)**. Le régresseur et l'index pourront servir d'outils à l'agent du **#05 (CartoIA)**.
+Module **#03** du monorepo **CartoData IDF** : consomme le GOLD du **#01 (Data Eng)**, complète le **#02 (BI)**. Le régresseur et l'index pourront servir d'outils à l'agent du **#05 (CartoIA)**.
