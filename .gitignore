@@ -1,0 +1,25 @@
+# Données (copiées/générées depuis le module 01) — jamais commitées
+data/
+*.duckdb
+*.parquet
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+
+# NB : models/ , docs/figures/ et metrics/ SONT versionnés (modèle servi + chiffres réels).

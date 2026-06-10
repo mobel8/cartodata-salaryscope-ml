@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "salaryscope"
+version = "0.1.0"
+description = "Moteur d'estimation salariale, explicabilité (SHAP) & matching du marché Data/IA francilien"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "pandas>=2.1",
+  "pyarrow>=14",
+  "numpy>=1.26",
+  "scikit-learn>=1.4",
+  "lightgbm>=4.1",
+  "shap>=0.44",
+  "matplotlib>=3.8",
+  "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.29"]
+demo = ["streamlit>=1.30"]
+mlops = ["mlflow>=2.10"]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+  "ignore:X does not have valid feature names:UserWarning",
+]

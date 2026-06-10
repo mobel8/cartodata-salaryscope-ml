@@ -1,0 +1,50 @@
+{
+  "n": 1845,
+  "n_groups": 859,
+  "models": {
+    "median_global": {
+      "mae": 24121.3,
+      "mape": 67.54,
+      "rmse": 33645.8
+    },
+    "median_exp_bucket": {
+      "mae": 23992.2,
+      "mape": 66.68,
+      "rmse": 33382.4
+    },
+    "ridge": {
+      "mae": 13055.4,
+      "mape": 30.54,
+      "rmse": 20411.9
+    },
+    "lightgbm": {
+      "mae": 11567.2,
+      "mape": 25.46,
+      "rmse": 19284.5,
+      "by_contract": {
+        "CDI": {
+          "n": 243,
+          "mae": 9160.4,
+          "mape": 14.99,
+          "rmse": 17158.9
+        },
+        "Non précisé": {
+          "n": 1438,
+          "mae": 12363.2,
+          "mape": 26.42,
+          "rmse": 19936.2
+        },
+        "Stage": {
+          "n": 140,
+          "mae": 5490.5,
+          "mape": 32.58,
+          "rmse": 8591.6
+        }
+      }
+    }
+  },
+  "target_median": 49000,
+  "target_q1": 29664,
+  "target_q3": 65000,
+  "uplift_vs_median_pct": 52.0
+}

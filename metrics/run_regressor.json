@@ -1,0 +1,15 @@
+{
+  "run": "regressor",
+  "params": {
+    "model": "lightgbm",
+    "objective": "l1",
+    "cv": "GroupKFold5/company"
+  },
+  "metrics": {
+    "mae_lightgbm": 11567.2,
+    "mape_lightgbm": 25.46,
+    "mae_median": 24121.3,
+    "mae_ridge": 13055.4,
+    "uplift_pct": 52.0
+  }
+}

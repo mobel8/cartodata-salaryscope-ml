@@ -1,0 +1,21 @@
+# Versions vérifiées sur la machine de build (Python 3.11)
+pandas==3.0.3
+pyarrow==24.0.0
+numpy==2.4.6
+scikit-learn==1.9.0
+lightgbm==4.6.0
+shap==0.51.0
+matplotlib==3.10.9
+joblib==1.5.3
+
+# API + démo
+fastapi==0.136.3
+uvicorn[standard]==0.49.0
+streamlit>=1.30
+
+# MLOps (tracking) — optionnel
+mlflow>=2.10
+
+# Qualité / CI
+pytest==9.0.3
+ruff==0.15.16
