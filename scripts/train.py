@@ -13,7 +13,7 @@ import warnings
 import joblib
 
 warnings.filterwarnings("ignore", message="X does not have valid feature names")
-import matplotlib
+import matplotlib  # noqa: E402
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
