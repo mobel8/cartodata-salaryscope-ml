@@ -19,4 +19,5 @@ streamlit>=1.30
 
 # Qualité / CI
 pytest==9.0.3
+httpx2  # requis par starlette.testclient (tests de l'API FastAPI)
 ruff==0.15.16
