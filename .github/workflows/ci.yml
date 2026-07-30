@@ -16,7 +16,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          # 3.13 : les pins (numpy==2.4.6, pandas==3.0.3) sont insolubles en 3.11
+          # (ResolutionImpossible sur le runner) ; venv local vérifié en 3.13.12.
+          python-version: "3.13"
           cache: pip
       - name: Installer
         run: |
