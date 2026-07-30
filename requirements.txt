@@ -14,8 +14,10 @@ uvicorn[standard]==0.49.0
 streamlit>=1.30
 
 # MLOps (tracking) — optionnel
-mlflow>=2.10
+# mlflow : tracking OPTIONNEL dans le code (try/except) ; >=2.10 est insoluble
+# avec pandas 3 (toutes les 2.x exigent pandas<3). Installer a part si besoin.
 
 # Qualité / CI
 pytest==9.0.3
+httpx2  # requis par starlette.testclient (tests de l'API FastAPI)
 ruff==0.15.16

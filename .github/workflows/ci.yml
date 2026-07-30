@@ -2,23 +2,23 @@ name: CI — SalaryScope ML
 
 on:
   push:
-    paths: ["03-salaryscope-ml/**"]
   pull_request:
-    paths: ["03-salaryscope-ml/**"]
   workflow_dispatch:
-
-defaults:
-  run:
-    working-directory: 03-salaryscope-ml
 
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    env:
+      # Runners 2 vCPU : limite les threads BLAS (évite les soucis mémoire scipy/shap).
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          # 3.13 : les pins (numpy==2.4.6, pandas==3.0.3) sont insolubles en 3.11
+          # (ResolutionImpossible sur le runner) ; venv local vérifié en 3.13.12.
+          python-version: "3.13"
           cache: pip
       - name: Installer
         run: |
